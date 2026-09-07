@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه من</title>
+    <!-- Font Vazirmatn -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+    <!-- Font Awesome ( برای آیکون سبد خرید) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        body {
+            background-color:white;
+            padding-top: 100px;
+        }
+
+        /* منوی بالا */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+           
+        }
+
+        .menu-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background-color:rgb(255, 73, 60) ;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* بخش هدر */
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* کارت‌های محصول */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* استایل عکس‌ها */
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: rgb(46, 167, 46);
+            font-weight: bold;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .buy-btn {
+            background-color: rgb(255, 73, 60);
+            color: white;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /*   سبد خرید شناور*/
+        .cart-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: rgb(255, 73, 60);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+             cursor: pointer;
+        }
+
+        #down {
+            text-align: center;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- منوی بالا -->
+    <nav>
+        <div class="menu-container">
+            <a href="#" class="nav-btn">خانه</a>
+            <a href="#" class="nav-btn">محصولات</a>
+            <a href="#" class="nav-btn">تماس با ما</a>
+        </div>
+    </nav>
+
+    <!-- عنوان فروشگاه -->
+    <header class="header-section">
+        <h1>فروشگاه من</h1>
+        <p>بهترین محصولات با بهترین قیمت</p>
+    </header>
+
+    <!-- محصولات (۳ عدد) -->
+    <main class="product-container">
+        <article class="card">
+            <img src="https://picsum.photos/400/400?random=1" alt="محصول ۱">
+            <h3>هدفون بی‌سیم</h3>
+            <span class="price">۳,۵۰۰,۰۰۰ تومان</span>
+            <button class="buy-btn">خرید محصول</button>
+        </article>
+
+        <article class="card">
+            <img src="https://picsum.photos/400/400?random=2" alt="محصول ۲">
+            <h3>گوشی هوشمند</h3>
+            <span class="price">۲۵,۰۰۰,۰۰۰ تومان</span>
+            <button class="buy-btn">خرید محصول</button>
+        </article>
+
+        <article class="card">
+            <img src="https://picsum.photos/400/400?random=3" alt="محصول ۳">
+            <h3>ساعت هوشمند</h3>
+            <span class="price">۲,۰۰۰,۰۰۰ تومان</span>
+            <button class="buy-btn">خرید محصول</button>
+        </article>
+    </main>
+
+    <!-- سبد خرید -->
+    <div class="cart-float">
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+    <hr>
+    <footer id="down">تهیه شده توسط فربد ارین زاده</footer>
+</body>
+
+</html>
